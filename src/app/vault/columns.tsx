@@ -57,6 +57,9 @@ export const columns: ColumnDef<Credential>[] = [
         header: () => <div className="text-center">Username</div>,
     },
     {
+      accessorKey: "view",
+    },
+    {
         id: "actions",
         cell: ({ row }) => {
             const credential = row.original
